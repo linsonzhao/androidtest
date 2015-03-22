@@ -22,7 +22,7 @@ public class Comment {
 	
 	@Override
 	public String toString() {
-		return comment;
+		return String.valueOf(id) + comment;
 	}
 
 }
