@@ -3,9 +3,12 @@ package com.main;
 import com.fragment1.R;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 public class MainActivity extends Activity {
 
@@ -13,6 +16,13 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		
+		FragmentManager fragmentManager = getFragmentManager();
+		FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+		
+		//--get the current display info--//
+		WindowManager vm = getWindowManager();
+		
 	}
 
 	@Override

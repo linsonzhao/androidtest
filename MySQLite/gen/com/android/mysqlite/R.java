@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.fragment1;
+package com.android.mysqlite;
 
 public final class R {
     public static final class anim {
@@ -1648,10 +1648,12 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090040;
+        public static final int action_settings=0x7f090042;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
+        public static final int btn_delete=0x7f09003f;
+        public static final int btn_new=0x7f090040;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f09002f;
@@ -1669,6 +1671,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090023;
         public static final int listMode=0x7f09000a;
+        public static final int listView=0x7f090041;
         public static final int list_item=0x7f090025;
         public static final int middle=0x7f09001d;
         public static final int never=0x7f090017;
@@ -1694,7 +1697,6 @@ containing a value of this type.
         public static final int split_action_bar=0x7f090004;
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
-        public static final int textView1=0x7f09003f;
         public static final int title=0x7f090027;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
@@ -1751,10 +1753,7 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int f1=0x7f030018;
-        public static final int f2=0x7f030019;
-        public static final int main=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f030018;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1818,7 +1817,9 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
         public static final int action_settings=0x7f0a0012;
         public static final int app_name=0x7f0a0010;
+        public static final int delete=0x7f0a0014;
         public static final int hello_world=0x7f0a0011;
+        public static final int new_create=0x7f0a0013;
     }
     public static final class style {
         /** 
@@ -2177,35 +2178,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.fragment1:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.fragment1:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.fragment1:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.fragment1:contentInsetEnd}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.fragment1:contentInsetLeft}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.fragment1:contentInsetRight}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.fragment1:contentInsetStart}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.fragment1:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.fragment1:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.fragment1:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.fragment1:elevation}</code></td><td> Elevation for the action bar itself </td></tr>
-           <tr><td><code>{@link #ActionBar_height com.fragment1:height}</code></td><td> Specifies a fixed height.</td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.fragment1:hideOnContentScroll}</code></td><td> Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.fragment1:homeAsUpIndicator}</code></td><td> Up navigation glyph </td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.fragment1:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.fragment1:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.fragment1:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.fragment1:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
+           <tr><td><code>{@link #ActionBar_background com.android.mysqlite:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.android.mysqlite:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.android.mysqlite:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.android.mysqlite:contentInsetEnd}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.android.mysqlite:contentInsetLeft}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.android.mysqlite:contentInsetRight}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.android.mysqlite:contentInsetStart}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.android.mysqlite:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.android.mysqlite:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.android.mysqlite:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.android.mysqlite:elevation}</code></td><td> Elevation for the action bar itself </td></tr>
+           <tr><td><code>{@link #ActionBar_height com.android.mysqlite:height}</code></td><td> Specifies a fixed height.</td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.android.mysqlite:hideOnContentScroll}</code></td><td> Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.android.mysqlite:homeAsUpIndicator}</code></td><td> Up navigation glyph </td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.android.mysqlite:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.android.mysqlite:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.android.mysqlite:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.android.mysqlite:itemPadding}</code></td><td> Specifies padding that should be applied to the left and right sides of
              system-provided items in the bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.fragment1:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.fragment1:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.fragment1:popupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
+           <tr><td><code>{@link #ActionBar_logo com.android.mysqlite:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.android.mysqlite:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.android.mysqlite:popupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
              shown by widgets in the action bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.fragment1:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.fragment1:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.fragment1:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.fragment1:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionBar_title com.fragment1:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.fragment1:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.android.mysqlite:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.android.mysqlite:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.android.mysqlite:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.android.mysqlite:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionBar_title com.android.mysqlite:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.android.mysqlite:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -2253,7 +2254,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:background
+          @attr name com.android.mysqlite:background
         */
         public static final int ActionBar_background = 11;
         /**
@@ -2267,7 +2268,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:backgroundSplit
+          @attr name com.android.mysqlite:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 13;
         /**
@@ -2281,7 +2282,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:backgroundStacked
+          @attr name com.android.mysqlite:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 12;
         /**
@@ -2300,7 +2301,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetEnd
+          @attr name com.android.mysqlite:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 22;
         /**
@@ -2319,7 +2320,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetLeft
+          @attr name com.android.mysqlite:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 23;
         /**
@@ -2338,7 +2339,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetRight
+          @attr name com.android.mysqlite:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 24;
         /**
@@ -2357,7 +2358,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetStart
+          @attr name com.android.mysqlite:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 21;
         /**
@@ -2369,7 +2370,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:customNavigationLayout
+          @attr name com.android.mysqlite:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 14;
         /**
@@ -2393,7 +2394,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.fragment1:displayOptions
+          @attr name com.android.mysqlite:displayOptions
         */
         public static final int ActionBar_displayOptions = 4;
         /**
@@ -2405,7 +2406,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:divider
+          @attr name com.android.mysqlite:divider
         */
         public static final int ActionBar_divider = 10;
         /**
@@ -2423,7 +2424,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:elevation
+          @attr name com.android.mysqlite:elevation
         */
         public static final int ActionBar_elevation = 25;
         /**
@@ -2441,7 +2442,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:height
+          @attr name com.android.mysqlite:height
         */
         public static final int ActionBar_height = 1;
         /**
@@ -2457,7 +2458,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:hideOnContentScroll
+          @attr name com.android.mysqlite:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 20;
         /**
@@ -2469,7 +2470,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:homeAsUpIndicator
+          @attr name com.android.mysqlite:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 2;
         /**
@@ -2481,7 +2482,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:homeLayout
+          @attr name com.android.mysqlite:homeLayout
         */
         public static final int ActionBar_homeLayout = 15;
         /**
@@ -2493,7 +2494,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:icon
+          @attr name com.android.mysqlite:icon
         */
         public static final int ActionBar_icon = 8;
         /**
@@ -2505,7 +2506,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:indeterminateProgressStyle
+          @attr name com.android.mysqlite:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 17;
         /**
@@ -2524,7 +2525,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:itemPadding
+          @attr name com.android.mysqlite:itemPadding
         */
         public static final int ActionBar_itemPadding = 19;
         /**
@@ -2536,7 +2537,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:logo
+          @attr name com.android.mysqlite:logo
         */
         public static final int ActionBar_logo = 9;
         /**
@@ -2556,7 +2557,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.fragment1:navigationMode
+          @attr name com.android.mysqlite:navigationMode
         */
         public static final int ActionBar_navigationMode = 3;
         /**
@@ -2569,7 +2570,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:popupTheme
+          @attr name com.android.mysqlite:popupTheme
         */
         public static final int ActionBar_popupTheme = 26;
         /**
@@ -2587,7 +2588,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:progressBarPadding
+          @attr name com.android.mysqlite:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 18;
         /**
@@ -2599,7 +2600,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:progressBarStyle
+          @attr name com.android.mysqlite:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 16;
         /**
@@ -2615,7 +2616,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:subtitle
+          @attr name com.android.mysqlite:subtitle
         */
         public static final int ActionBar_subtitle = 5;
         /**
@@ -2627,7 +2628,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:subtitleTextStyle
+          @attr name com.android.mysqlite:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 7;
         /**
@@ -2643,7 +2644,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:title
+          @attr name com.android.mysqlite:title
         */
         public static final int ActionBar_title = 0;
         /**
@@ -2655,7 +2656,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:titleTextStyle
+          @attr name com.android.mysqlite:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 6;
         /**  Valid LayoutParams for views placed in the action bar as custom views. 
@@ -2707,12 +2708,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.fragment1:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.fragment1:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.fragment1:closeItemLayout}</code></td><td> Specifies a layout to use for the "close" item at the starting edge.</td></tr>
-           <tr><td><code>{@link #ActionMode_height com.fragment1:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.fragment1:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.fragment1:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           <tr><td><code>{@link #ActionMode_background com.android.mysqlite:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.android.mysqlite:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.android.mysqlite:closeItemLayout}</code></td><td> Specifies a layout to use for the "close" item at the starting edge.</td></tr>
+           <tr><td><code>{@link #ActionMode_height com.android.mysqlite:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.android.mysqlite:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.android.mysqlite:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2734,7 +2735,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:background
+          @attr name com.android.mysqlite:background
         */
         public static final int ActionMode_background = 3;
         /**
@@ -2748,7 +2749,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:backgroundSplit
+          @attr name com.android.mysqlite:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
@@ -2760,7 +2761,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:closeItemLayout
+          @attr name com.android.mysqlite:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
@@ -2778,7 +2779,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:height
+          @attr name com.android.mysqlite:height
         */
         public static final int ActionMode_height = 0;
         /**
@@ -2790,7 +2791,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:subtitleTextStyle
+          @attr name com.android.mysqlite:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
@@ -2802,7 +2803,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:titleTextStyle
+          @attr name com.android.mysqlite:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /**  Attrbitutes for a ActivityChooserView. 
@@ -2811,8 +2812,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.fragment1:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.fragment1:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.android.mysqlite:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.android.mysqlite:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2834,7 +2835,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:expandActivityOverflowButtonDrawable
+          @attr name com.android.mysqlite:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
@@ -2850,7 +2851,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:initialActivityCount
+          @attr name com.android.mysqlite:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -2859,7 +2860,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps com.fragment1:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps com.android.mysqlite:textAllCaps}</code></td><td> Present the text in ALL CAPS.</td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2876,7 +2877,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textAllCaps
+          @attr name com.android.mysqlite:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -2885,14 +2886,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize com.fragment1:barSize}</code></td><td> The size of the bars when they are parallel to each other </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.fragment1:color}</code></td><td> The drawing color for the bars </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.fragment1:drawableSize}</code></td><td> The total size of the drawable </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.fragment1:gapBetweenBars}</code></td><td> The max gap between the bars when they are parallel to each other </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.fragment1:middleBarArrowSize}</code></td><td> The size of the middle bar when top and bottom bars merge into middle bar to form an arrow </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.fragment1:spinBars}</code></td><td> Whether bars should rotate or not during transition </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.fragment1:thickness}</code></td><td> The thickness (stroke size) for the bar paint </td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.fragment1:topBottomBarArrowSize}</code></td><td> The size of the top and bottom bars when they merge to the middle bar to form an arrow </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize com.android.mysqlite:barSize}</code></td><td> The size of the bars when they are parallel to each other </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.android.mysqlite:color}</code></td><td> The drawing color for the bars </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.android.mysqlite:drawableSize}</code></td><td> The total size of the drawable </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.android.mysqlite:gapBetweenBars}</code></td><td> The max gap between the bars when they are parallel to each other </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.android.mysqlite:middleBarArrowSize}</code></td><td> The size of the middle bar when top and bottom bars merge into middle bar to form an arrow </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.android.mysqlite:spinBars}</code></td><td> Whether bars should rotate or not during transition </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.android.mysqlite:thickness}</code></td><td> The thickness (stroke size) for the bar paint </td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.android.mysqlite:topBottomBarArrowSize}</code></td><td> The size of the top and bottom bars when they merge to the middle bar to form an arrow </td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -2922,7 +2923,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:barSize
+          @attr name com.android.mysqlite:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
@@ -2939,7 +2940,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:color
+          @attr name com.android.mysqlite:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
@@ -2957,7 +2958,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:drawableSize
+          @attr name com.android.mysqlite:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
@@ -2975,7 +2976,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:gapBetweenBars
+          @attr name com.android.mysqlite:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
@@ -2993,7 +2994,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:middleBarArrowSize
+          @attr name com.android.mysqlite:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
@@ -3009,7 +3010,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:spinBars
+          @attr name com.android.mysqlite:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
@@ -3027,7 +3028,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:thickness
+          @attr name com.android.mysqlite:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
@@ -3045,7 +3046,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:topBottomBarArrowSize
+          @attr name com.android.mysqlite:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -3063,11 +3064,11 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td> Should the layout be a column or a row?  Use "horizontal"
              for a row, "vertical" for a column.</td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td> Defines the maximum weight sum.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.fragment1:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.fragment1:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.fragment1:measureWithLargestChild}</code></td><td> When set to true, all children with a weight will be considered having
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.android.mysqlite:divider}</code></td><td> Drawable to use as a vertical divider between buttons.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.android.mysqlite:dividerPadding}</code></td><td> Size of padding on either end of a divider.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.android.mysqlite:measureWithLargestChild}</code></td><td> When set to true, all children with a weight will be considered having
              the minimum size of the largest child.</td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.fragment1:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.android.mysqlite:showDividers}</code></td><td> Setting for which dividers to show.</td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -3145,7 +3146,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:divider
+          @attr name com.android.mysqlite:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
@@ -3163,7 +3164,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:dividerPadding
+          @attr name com.android.mysqlite:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
@@ -3181,7 +3182,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:measureWithLargestChild
+          @attr name com.android.mysqlite:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
@@ -3202,7 +3203,7 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.fragment1:showDividers
+          @attr name com.android.mysqlite:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -3367,10 +3368,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.fragment1:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.fragment1:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
+           <tr><td><code>{@link #MenuItem_actionLayout com.android.mysqlite:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.android.mysqlite:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.</td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.fragment1:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
+           <tr><td><code>{@link #MenuItem_actionViewClass com.android.mysqlite:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
              action view.</td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
@@ -3386,7 +3387,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td> The title associated with the item.</td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.fragment1:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.android.mysqlite:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -3424,7 +3425,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionLayout
+          @attr name com.android.mysqlite:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
@@ -3443,7 +3444,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:actionProviderClass
+          @attr name com.android.mysqlite:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
@@ -3461,7 +3462,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:actionViewClass
+          @attr name com.android.mysqlite:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -3617,7 +3618,7 @@ containing a value of this type.
                  larger segment of its container. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.fragment1:showAsAction
+          @attr name com.android.mysqlite:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -3633,7 +3634,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.fragment1:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.android.mysqlite:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -3724,7 +3725,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:preserveIconSpacing
+          @attr name com.android.mysqlite:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -3734,7 +3735,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.fragment1:overlapAnchor}</code></td><td> Whether the popup window should overlap its anchor view.</td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.android.mysqlite:overlapAnchor}</code></td><td> Whether the popup window should overlap its anchor view.</td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -3761,7 +3762,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:overlapAnchor
+          @attr name com.android.mysqlite:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -3770,7 +3771,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.fragment1:state_above_anchor}</code></td><td> State identifier indicating the popup will be above the anchor.</td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.android.mysqlite:state_above_anchor}</code></td><td> State identifier indicating the popup will be above the anchor.</td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -3790,7 +3791,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:state_above_anchor
+          @attr name com.android.mysqlite:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a SearchView.
@@ -3803,17 +3804,17 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.fragment1:closeIcon}</code></td><td> Close button icon </td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.fragment1:commitIcon}</code></td><td> Commit icon shown in the query suggestion row </td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.fragment1:goIcon}</code></td><td> Go button icon </td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.fragment1:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
-           <tr><td><code>{@link #SearchView_layout com.fragment1:layout}</code></td><td> The layout to use for the search view.</td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.fragment1:queryBackground}</code></td><td> Background for the section containing the search query </td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.fragment1:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.fragment1:searchIcon}</code></td><td> Search icon </td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.fragment1:submitBackground}</code></td><td> Background for the section containing the action (e.</td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.fragment1:suggestionRowLayout}</code></td><td> Layout for query suggestion rows </td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.fragment1:voiceIcon}</code></td><td> Voice button icon </td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.android.mysqlite:closeIcon}</code></td><td> Close button icon </td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.android.mysqlite:commitIcon}</code></td><td> Commit icon shown in the query suggestion row </td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.android.mysqlite:goIcon}</code></td><td> Go button icon </td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.android.mysqlite:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
+           <tr><td><code>{@link #SearchView_layout com.android.mysqlite:layout}</code></td><td> The layout to use for the search view.</td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.android.mysqlite:queryBackground}</code></td><td> Background for the section containing the search query </td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.android.mysqlite:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.android.mysqlite:searchIcon}</code></td><td> Search icon </td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.android.mysqlite:submitBackground}</code></td><td> Background for the section containing the action (e.</td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.android.mysqlite:suggestionRowLayout}</code></td><td> Layout for query suggestion rows </td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.android.mysqlite:voiceIcon}</code></td><td> Voice button icon </td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -3879,7 +3880,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:closeIcon
+          @attr name com.android.mysqlite:closeIcon
         */
         public static final int SearchView_closeIcon = 7;
         /**
@@ -3891,7 +3892,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:commitIcon
+          @attr name com.android.mysqlite:commitIcon
         */
         public static final int SearchView_commitIcon = 11;
         /**
@@ -3903,7 +3904,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:goIcon
+          @attr name com.android.mysqlite:goIcon
         */
         public static final int SearchView_goIcon = 8;
         /**
@@ -3920,7 +3921,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:iconifiedByDefault
+          @attr name com.android.mysqlite:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
@@ -3932,7 +3933,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:layout
+          @attr name com.android.mysqlite:layout
         */
         public static final int SearchView_layout = 4;
         /**
@@ -3944,7 +3945,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:queryBackground
+          @attr name com.android.mysqlite:queryBackground
         */
         public static final int SearchView_queryBackground = 13;
         /**
@@ -3960,7 +3961,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:queryHint
+          @attr name com.android.mysqlite:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
@@ -3972,7 +3973,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:searchIcon
+          @attr name com.android.mysqlite:searchIcon
         */
         public static final int SearchView_searchIcon = 9;
         /**
@@ -3984,7 +3985,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:submitBackground
+          @attr name com.android.mysqlite:submitBackground
         */
         public static final int SearchView_submitBackground = 14;
         /**
@@ -3996,7 +3997,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:suggestionRowLayout
+          @attr name com.android.mysqlite:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 12;
         /**
@@ -4008,7 +4009,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:voiceIcon
+          @attr name com.android.mysqlite:voiceIcon
         */
         public static final int SearchView_voiceIcon = 10;
         /** Attributes that can be used with a Spinner.
@@ -4026,12 +4027,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.fragment1:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.android.mysqlite:disableChildrenWhenDisabled}</code></td><td> Whether this spinner should mark child views as enabled/disabled when
              the spinner itself is enabled/disabled.</td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView com.fragment1:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
+           <tr><td><code>{@link #Spinner_popupPromptView com.android.mysqlite:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #Spinner_prompt com.fragment1:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode com.fragment1:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
+           <tr><td><code>{@link #Spinner_prompt com.android.mysqlite:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode com.android.mysqlite:spinnerMode}</code></td><td> Display mode for spinner options.</td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -4126,7 +4127,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:disableChildrenWhenDisabled
+          @attr name com.android.mysqlite:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
@@ -4140,7 +4141,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:popupPromptView
+          @attr name com.android.mysqlite:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
@@ -4152,7 +4153,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:prompt
+          @attr name com.android.mysqlite:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
@@ -4172,7 +4173,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
                  anchored to the spinner widget itself. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.fragment1:spinnerMode
+          @attr name com.android.mysqlite:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
@@ -4184,13 +4185,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td> Text to use when the switch is in the unchecked/"off" state.</td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td> Text to use when the switch is in the checked/"on" state.</td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td> Drawable to use as the "thumb" that switches back and forth.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.fragment1:showText}</code></td><td> Whether to draw on/off text.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.fragment1:splitTrack}</code></td><td> Whether to split the track and leave a gap for the thumb drawable.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.fragment1:switchMinWidth}</code></td><td> Minimum width for the switch component </td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.fragment1:switchPadding}</code></td><td> Minimum space between the switch and caption text </td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.fragment1:switchTextAppearance}</code></td><td> TextAppearance style for text displayed on the switch thumb.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.fragment1:thumbTextPadding}</code></td><td> Amount of padding on either side of text within the switch thumb.</td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.fragment1:track}</code></td><td> Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.android.mysqlite:showText}</code></td><td> Whether to draw on/off text.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.android.mysqlite:splitTrack}</code></td><td> Whether to split the track and leave a gap for the thumb drawable.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.android.mysqlite:switchMinWidth}</code></td><td> Minimum width for the switch component </td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.android.mysqlite:switchPadding}</code></td><td> Minimum space between the switch and caption text </td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.android.mysqlite:switchTextAppearance}</code></td><td> TextAppearance style for text displayed on the switch thumb.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.android.mysqlite:thumbTextPadding}</code></td><td> Amount of padding on either side of text within the switch thumb.</td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.android.mysqlite:track}</code></td><td> Drawable to use as the "track" that the switch thumb slides within.</td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -4248,7 +4249,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:showText
+          @attr name com.android.mysqlite:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
@@ -4264,7 +4265,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:splitTrack
+          @attr name com.android.mysqlite:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
@@ -4282,7 +4283,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:switchMinWidth
+          @attr name com.android.mysqlite:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
@@ -4300,7 +4301,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:switchPadding
+          @attr name com.android.mysqlite:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
@@ -4312,7 +4313,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:switchTextAppearance
+          @attr name com.android.mysqlite:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
@@ -4330,7 +4331,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:thumbTextPadding
+          @attr name com.android.mysqlite:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
@@ -4342,7 +4343,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:track
+          @attr name com.android.mysqlite:track
         */
         public static final int SwitchCompat_track = 3;
         /**  These are the standard attributes that make up a complete theme. 
@@ -4351,104 +4352,104 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider com.fragment1:actionBarDivider}</code></td><td> Custom divider drawable to use for elements in the action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground com.fragment1:actionBarItemBackground}</code></td><td> Custom item state list drawable background for action bar items.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme com.fragment1:actionBarPopupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
+           <tr><td><code>{@link #Theme_actionBarDivider com.android.mysqlite:actionBarDivider}</code></td><td> Custom divider drawable to use for elements in the action bar.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.android.mysqlite:actionBarItemBackground}</code></td><td> Custom item state list drawable background for action bar items.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.android.mysqlite:actionBarPopupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
              shown by widgets in the action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize com.fragment1:actionBarSize}</code></td><td> Size of the Action Bar, including the contextual
+           <tr><td><code>{@link #Theme_actionBarSize com.android.mysqlite:actionBarSize}</code></td><td> Size of the Action Bar, including the contextual
              bar used to present Action Modes.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle com.fragment1:actionBarSplitStyle}</code></td><td> Reference to a style for the split Action Bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle com.fragment1:actionBarStyle}</code></td><td> Reference to a style for the Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.fragment1:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle com.fragment1:actionBarTabStyle}</code></td><td> Default style for tabs within an action bar </td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.fragment1:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme com.fragment1:actionBarTheme}</code></td><td> Reference to a theme that should be used to inflate the
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.android.mysqlite:actionBarSplitStyle}</code></td><td> Reference to a style for the split Action Bar.</td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.android.mysqlite:actionBarStyle}</code></td><td> Reference to a style for the Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.android.mysqlite:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.android.mysqlite:actionBarTabStyle}</code></td><td> Default style for tabs within an action bar </td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.android.mysqlite:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.android.mysqlite:actionBarTheme}</code></td><td> Reference to a theme that should be used to inflate the
              action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.fragment1:actionBarWidgetTheme}</code></td><td> Reference to a theme that should be used to inflate widgets
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.android.mysqlite:actionBarWidgetTheme}</code></td><td> Reference to a theme that should be used to inflate widgets
              and layouts destined for the action bar.</td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle com.fragment1:actionButtonStyle}</code></td><td> Default action button style.</td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.fragment1:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.fragment1:actionMenuTextAppearance}</code></td><td> TextAppearance style that will be applied to text that
+           <tr><td><code>{@link #Theme_actionButtonStyle com.android.mysqlite:actionButtonStyle}</code></td><td> Default action button style.</td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.android.mysqlite:actionDropDownStyle}</code></td><td> Default ActionBar dropdown style.</td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.android.mysqlite:actionMenuTextAppearance}</code></td><td> TextAppearance style that will be applied to text that
              appears within action menu items.</td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor com.fragment1:actionMenuTextColor}</code></td><td> Color for text that appears within action menu items.</td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground com.fragment1:actionModeBackground}</code></td><td> Background drawable to use for action mode UI </td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.fragment1:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.fragment1:actionModeCloseDrawable}</code></td><td> Drawable to use for the close action mode button </td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.fragment1:actionModeCopyDrawable}</code></td><td> Drawable to use for the Copy action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable com.fragment1:actionModeCutDrawable}</code></td><td> Drawable to use for the Cut action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable com.fragment1:actionModeFindDrawable}</code></td><td> Drawable to use for the Find action button in WebView selection action modes </td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable com.fragment1:actionModePasteDrawable}</code></td><td> Drawable to use for the Paste action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.fragment1:actionModePopupWindowStyle}</code></td><td> PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.fragment1:actionModeSelectAllDrawable}</code></td><td> Drawable to use for the Select all action button in Contextual Action Bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable com.fragment1:actionModeShareDrawable}</code></td><td> Drawable to use for the Share action button in WebView selection action modes </td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground com.fragment1:actionModeSplitBackground}</code></td><td> Background drawable to use for action mode UI in the lower split bar </td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle com.fragment1:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.fragment1:actionModeWebSearchDrawable}</code></td><td> Drawable to use for the Web Search action button in WebView selection action modes </td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.fragment1:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.fragment1:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle com.fragment1:activityChooserViewStyle}</code></td><td> Default ActivityChooserView style.</td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.android.mysqlite:actionMenuTextColor}</code></td><td> Color for text that appears within action menu items.</td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.android.mysqlite:actionModeBackground}</code></td><td> Background drawable to use for action mode UI </td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.android.mysqlite:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.android.mysqlite:actionModeCloseDrawable}</code></td><td> Drawable to use for the close action mode button </td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.android.mysqlite:actionModeCopyDrawable}</code></td><td> Drawable to use for the Copy action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.android.mysqlite:actionModeCutDrawable}</code></td><td> Drawable to use for the Cut action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.android.mysqlite:actionModeFindDrawable}</code></td><td> Drawable to use for the Find action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.android.mysqlite:actionModePasteDrawable}</code></td><td> Drawable to use for the Paste action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.android.mysqlite:actionModePopupWindowStyle}</code></td><td> PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.android.mysqlite:actionModeSelectAllDrawable}</code></td><td> Drawable to use for the Select all action button in Contextual Action Bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.android.mysqlite:actionModeShareDrawable}</code></td><td> Drawable to use for the Share action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.android.mysqlite:actionModeSplitBackground}</code></td><td> Background drawable to use for action mode UI in the lower split bar </td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.android.mysqlite:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.android.mysqlite:actionModeWebSearchDrawable}</code></td><td> Drawable to use for the Web Search action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.android.mysqlite:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.android.mysqlite:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.android.mysqlite:activityChooserViewStyle}</code></td><td> Default ActivityChooserView style.</td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.fragment1:buttonBarButtonStyle}</code></td><td> A style that may be applied to Buttons placed within a
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.android.mysqlite:buttonBarButtonStyle}</code></td><td> A style that may be applied to Buttons placed within a
              LinearLayout with the style buttonBarStyle to form a button bar.</td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle com.fragment1:buttonBarStyle}</code></td><td> A style that may be applied to horizontal LinearLayouts
+           <tr><td><code>{@link #Theme_buttonBarStyle com.android.mysqlite:buttonBarStyle}</code></td><td> A style that may be applied to horizontal LinearLayouts
          to form a button bar.</td></tr>
-           <tr><td><code>{@link #Theme_colorAccent com.fragment1:colorAccent}</code></td><td> Bright complement to the primary branding color.</td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal com.fragment1:colorButtonNormal}</code></td><td> The color applied to framework buttons in their normal state.</td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated com.fragment1:colorControlActivated}</code></td><td> The color applied to framework controls in their activated (ex.</td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight com.fragment1:colorControlHighlight}</code></td><td> The color applied to framework control highlights (ex.</td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal com.fragment1:colorControlNormal}</code></td><td> The color applied to framework controls in their normal state.</td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary com.fragment1:colorPrimary}</code></td><td> The primary branding color for the app.</td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark com.fragment1:colorPrimaryDark}</code></td><td> Dark variant of the primary branding color.</td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.fragment1:colorSwitchThumbNormal}</code></td><td> The color applied to framework switch thumbs in their normal state.</td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal com.fragment1:dividerHorizontal}</code></td><td> A drawable that may be used as a horizontal divider between visual elements.</td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical com.fragment1:dividerVertical}</code></td><td> A drawable that may be used as a vertical divider between visual elements.</td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle com.fragment1:dropDownListViewStyle}</code></td><td> ListPopupWindow compatibility </td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.fragment1:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground com.fragment1:editTextBackground}</code></td><td> EditText background drawable.</td></tr>
-           <tr><td><code>{@link #Theme_editTextColor com.fragment1:editTextColor}</code></td><td> EditText text foreground color.</td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator com.fragment1:homeAsUpIndicator}</code></td><td> Specifies a drawable to use for the 'home as up' indicator.</td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.fragment1:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle com.fragment1:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight com.fragment1:listPreferredItemHeight}</code></td><td> The preferred list item height.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.fragment1:listPreferredItemHeightLarge}</code></td><td> A larger, more robust list item height.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.fragment1:listPreferredItemHeightSmall}</code></td><td> A smaller, sleeker list item height.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.fragment1:listPreferredItemPaddingLeft}</code></td><td> The preferred padding along the left edge of list items.</td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.fragment1:listPreferredItemPaddingRight}</code></td><td> The preferred padding along the right edge of list items.</td></tr>
-           <tr><td><code>{@link #Theme_panelBackground com.fragment1:panelBackground}</code></td><td> The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.fragment1:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.fragment1:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.fragment1:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle com.fragment1:popupWindowStyle}</code></td><td> Default PopupWindow style.</td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle com.fragment1:searchViewStyle}</code></td><td> Style for the search query widget.</td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground com.fragment1:selectableItemBackground}</code></td><td> A style that may be applied to buttons or other selectable items
+           <tr><td><code>{@link #Theme_colorAccent com.android.mysqlite:colorAccent}</code></td><td> Bright complement to the primary branding color.</td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.android.mysqlite:colorButtonNormal}</code></td><td> The color applied to framework buttons in their normal state.</td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.android.mysqlite:colorControlActivated}</code></td><td> The color applied to framework controls in their activated (ex.</td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.android.mysqlite:colorControlHighlight}</code></td><td> The color applied to framework control highlights (ex.</td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.android.mysqlite:colorControlNormal}</code></td><td> The color applied to framework controls in their normal state.</td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.android.mysqlite:colorPrimary}</code></td><td> The primary branding color for the app.</td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.android.mysqlite:colorPrimaryDark}</code></td><td> Dark variant of the primary branding color.</td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.android.mysqlite:colorSwitchThumbNormal}</code></td><td> The color applied to framework switch thumbs in their normal state.</td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.android.mysqlite:dividerHorizontal}</code></td><td> A drawable that may be used as a horizontal divider between visual elements.</td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.android.mysqlite:dividerVertical}</code></td><td> A drawable that may be used as a vertical divider between visual elements.</td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.android.mysqlite:dropDownListViewStyle}</code></td><td> ListPopupWindow compatibility </td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.android.mysqlite:dropdownListPreferredItemHeight}</code></td><td> The preferred item height for dropdown lists.</td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.android.mysqlite:editTextBackground}</code></td><td> EditText background drawable.</td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.android.mysqlite:editTextColor}</code></td><td> EditText text foreground color.</td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.android.mysqlite:homeAsUpIndicator}</code></td><td> Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.android.mysqlite:listChoiceBackgroundIndicator}</code></td><td> Drawable used as a background for selected list items.</td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.android.mysqlite:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.android.mysqlite:listPreferredItemHeight}</code></td><td> The preferred list item height.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.android.mysqlite:listPreferredItemHeightLarge}</code></td><td> A larger, more robust list item height.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.android.mysqlite:listPreferredItemHeightSmall}</code></td><td> A smaller, sleeker list item height.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.android.mysqlite:listPreferredItemPaddingLeft}</code></td><td> The preferred padding along the left edge of list items.</td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.android.mysqlite:listPreferredItemPaddingRight}</code></td><td> The preferred padding along the right edge of list items.</td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.android.mysqlite:panelBackground}</code></td><td> The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.android.mysqlite:panelMenuListTheme}</code></td><td> Default Panel Menu style.</td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.android.mysqlite:panelMenuListWidth}</code></td><td> Default Panel Menu width.</td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.android.mysqlite:popupMenuStyle}</code></td><td> Default PopupMenu style.</td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.android.mysqlite:popupWindowStyle}</code></td><td> Default PopupWindow style.</td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.android.mysqlite:searchViewStyle}</code></td><td> Style for the search query widget.</td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.android.mysqlite:selectableItemBackground}</code></td><td> A style that may be applied to buttons or other selectable items
              that should react to pressed and focus states, but that do not
              have a clear visual border along the edges.</td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.fragment1:selectableItemBackgroundBorderless}</code></td><td> Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.fragment1:spinnerDropDownItemStyle}</code></td><td> Default Spinner style.</td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle com.fragment1:spinnerStyle}</code></td><td> Default Spinner style.</td></tr>
-           <tr><td><code>{@link #Theme_switchStyle com.fragment1:switchStyle}</code></td><td> Default style for the Switch widget.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.fragment1:textAppearanceLargePopupMenu}</code></td><td> Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem com.fragment1:textAppearanceListItem}</code></td><td> The preferred TextAppearance for the primary text of list items.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.fragment1:textAppearanceListItemSmall}</code></td><td> The preferred TextAppearance for the primary text of small list items.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.fragment1:textAppearanceSearchResultSubtitle}</code></td><td> Text color, typeface, size, and style for system search result subtitle.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.fragment1:textAppearanceSearchResultTitle}</code></td><td> Text color, typeface, size, and style for system search result title.</td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.fragment1:textAppearanceSmallPopupMenu}</code></td><td> Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl com.fragment1:textColorSearchUrl}</code></td><td> Text color for urls in search suggestions, used by things like global search </td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.fragment1:toolbarNavigationButtonStyle}</code></td><td> Default Toolar NavigationButtonStyle </td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle com.fragment1:toolbarStyle}</code></td><td> Default Toolbar style.</td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar com.fragment1:windowActionBar}</code></td><td> Flag indicating whether this window should have an Action Bar
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.android.mysqlite:selectableItemBackgroundBorderless}</code></td><td> Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.android.mysqlite:spinnerDropDownItemStyle}</code></td><td> Default Spinner style.</td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.android.mysqlite:spinnerStyle}</code></td><td> Default Spinner style.</td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.android.mysqlite:switchStyle}</code></td><td> Default style for the Switch widget.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.android.mysqlite:textAppearanceLargePopupMenu}</code></td><td> Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.android.mysqlite:textAppearanceListItem}</code></td><td> The preferred TextAppearance for the primary text of list items.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.android.mysqlite:textAppearanceListItemSmall}</code></td><td> The preferred TextAppearance for the primary text of small list items.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.android.mysqlite:textAppearanceSearchResultSubtitle}</code></td><td> Text color, typeface, size, and style for system search result subtitle.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.android.mysqlite:textAppearanceSearchResultTitle}</code></td><td> Text color, typeface, size, and style for system search result title.</td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.android.mysqlite:textAppearanceSmallPopupMenu}</code></td><td> Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.android.mysqlite:textColorSearchUrl}</code></td><td> Text color for urls in search suggestions, used by things like global search </td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.android.mysqlite:toolbarNavigationButtonStyle}</code></td><td> Default Toolar NavigationButtonStyle </td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.android.mysqlite:toolbarStyle}</code></td><td> Default Toolbar style.</td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.android.mysqlite:windowActionBar}</code></td><td> Flag indicating whether this window should have an Action Bar
              in place of the usual title bar.</td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay com.fragment1:windowActionBarOverlay}</code></td><td> Flag indicating whether this window's Action Bar should overlay
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.android.mysqlite:windowActionBarOverlay}</code></td><td> Flag indicating whether this window's Action Bar should overlay
              application content.</td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay com.fragment1:windowActionModeOverlay}</code></td><td> Flag indicating whether action modes should overlay window content
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.android.mysqlite:windowActionModeOverlay}</code></td><td> Flag indicating whether action modes should overlay window content
              when there is not reserved space for their UI (such as an Action Bar).</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.fragment1:windowFixedHeightMajor}</code></td><td> A fixed height for the window along the major axis of the screen,
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.android.mysqlite:windowFixedHeightMajor}</code></td><td> A fixed height for the window along the major axis of the screen,
              that is, when in portrait.</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.fragment1:windowFixedHeightMinor}</code></td><td> A fixed height for the window along the minor axis of the screen,
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.android.mysqlite:windowFixedHeightMinor}</code></td><td> A fixed height for the window along the minor axis of the screen,
              that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.fragment1:windowFixedWidthMajor}</code></td><td> A fixed width for the window along the major axis of the screen,
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.android.mysqlite:windowFixedWidthMajor}</code></td><td> A fixed width for the window along the major axis of the screen,
              that is, when in landscape.</td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.fragment1:windowFixedWidthMinor}</code></td><td> A fixed width for the window along the minor axis of the screen,
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.android.mysqlite:windowFixedWidthMinor}</code></td><td> A fixed width for the window along the minor axis of the screen,
              that is, when in portrait.</td></tr>
            </table>
            @see #Theme_actionBarDivider
@@ -4567,7 +4568,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarDivider
+          @attr name com.android.mysqlite:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 19;
         /**
@@ -4579,7 +4580,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarItemBackground
+          @attr name com.android.mysqlite:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 20;
         /**
@@ -4592,7 +4593,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarPopupTheme
+          @attr name com.android.mysqlite:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 13;
         /**
@@ -4619,7 +4620,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarSize
+          @attr name com.android.mysqlite:actionBarSize
         */
         public static final int Theme_actionBarSize = 18;
         /**
@@ -4634,7 +4635,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarSplitStyle
+          @attr name com.android.mysqlite:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 15;
         /**
@@ -4646,17 +4647,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarStyle
+          @attr name com.android.mysqlite:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:actionBarTabBarStyle
+          @attr name com.android.mysqlite:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 9;
         /**
@@ -4668,17 +4669,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarTabStyle
+          @attr name com.android.mysqlite:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 8;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:actionBarTabTextStyle
+          @attr name com.android.mysqlite:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 10;
         /**
@@ -4692,7 +4693,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarTheme
+          @attr name com.android.mysqlite:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 16;
         /**
@@ -4710,7 +4711,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionBarWidgetTheme
+          @attr name com.android.mysqlite:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 17;
         /**
@@ -4722,7 +4723,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionButtonStyle
+          @attr name com.android.mysqlite:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 43;
         /**
@@ -4734,7 +4735,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionDropDownStyle
+          @attr name com.android.mysqlite:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 38;
         /**
@@ -4747,7 +4748,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionMenuTextAppearance
+          @attr name com.android.mysqlite:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 21;
         /**
@@ -4762,7 +4763,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionMenuTextColor
+          @attr name com.android.mysqlite:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 22;
         /**
@@ -4774,17 +4775,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeBackground
+          @attr name com.android.mysqlite:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 25;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:actionModeCloseButtonStyle
+          @attr name com.android.mysqlite:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 24;
         /**
@@ -4796,7 +4797,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeCloseDrawable
+          @attr name com.android.mysqlite:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 27;
         /**
@@ -4808,7 +4809,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeCopyDrawable
+          @attr name com.android.mysqlite:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 29;
         /**
@@ -4820,7 +4821,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeCutDrawable
+          @attr name com.android.mysqlite:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 28;
         /**
@@ -4832,7 +4833,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeFindDrawable
+          @attr name com.android.mysqlite:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 33;
         /**
@@ -4844,7 +4845,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModePasteDrawable
+          @attr name com.android.mysqlite:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 30;
         /**
@@ -4856,7 +4857,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModePopupWindowStyle
+          @attr name com.android.mysqlite:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 35;
         /**
@@ -4868,7 +4869,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeSelectAllDrawable
+          @attr name com.android.mysqlite:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 31;
         /**
@@ -4880,7 +4881,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeShareDrawable
+          @attr name com.android.mysqlite:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 32;
         /**
@@ -4892,17 +4893,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeSplitBackground
+          @attr name com.android.mysqlite:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 26;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:actionModeStyle
+          @attr name com.android.mysqlite:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 23;
         /**
@@ -4914,27 +4915,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:actionModeWebSearchDrawable
+          @attr name com.android.mysqlite:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:actionOverflowButtonStyle
+          @attr name com.android.mysqlite:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 11;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:actionOverflowMenuStyle
+          @attr name com.android.mysqlite:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 12;
         /**
@@ -4946,7 +4947,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:activityChooserViewStyle
+          @attr name com.android.mysqlite:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 50;
         /**
@@ -4965,7 +4966,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:buttonBarButtonStyle
+          @attr name com.android.mysqlite:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 45;
         /**
@@ -4978,7 +4979,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:buttonBarStyle
+          @attr name com.android.mysqlite:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 44;
         /**
@@ -4996,7 +4997,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorAccent
+          @attr name com.android.mysqlite:colorAccent
         */
         public static final int Theme_colorAccent = 77;
         /**
@@ -5013,7 +5014,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorButtonNormal
+          @attr name com.android.mysqlite:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 81;
         /**
@@ -5030,7 +5031,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorControlActivated
+          @attr name com.android.mysqlite:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 79;
         /**
@@ -5047,7 +5048,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorControlHighlight
+          @attr name com.android.mysqlite:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 80;
         /**
@@ -5064,7 +5065,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorControlNormal
+          @attr name com.android.mysqlite:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 78;
         /**
@@ -5082,7 +5083,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorPrimary
+          @attr name com.android.mysqlite:colorPrimary
         */
         public static final int Theme_colorPrimary = 75;
         /**
@@ -5100,7 +5101,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorPrimaryDark
+          @attr name com.android.mysqlite:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 76;
         /**
@@ -5117,7 +5118,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:colorSwitchThumbNormal
+          @attr name com.android.mysqlite:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 82;
         /**
@@ -5129,7 +5130,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:dividerHorizontal
+          @attr name com.android.mysqlite:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 49;
         /**
@@ -5141,7 +5142,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:dividerVertical
+          @attr name com.android.mysqlite:dividerVertical
         */
         public static final int Theme_dividerVertical = 48;
         /**
@@ -5153,7 +5154,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:dropDownListViewStyle
+          @attr name com.android.mysqlite:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 67;
         /**
@@ -5171,7 +5172,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:dropdownListPreferredItemHeight
+          @attr name com.android.mysqlite:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 39;
         /**
@@ -5183,7 +5184,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:editTextBackground
+          @attr name com.android.mysqlite:editTextBackground
         */
         public static final int Theme_editTextBackground = 56;
         /**
@@ -5197,7 +5198,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:editTextColor
+          @attr name com.android.mysqlite:editTextColor
         */
         public static final int Theme_editTextColor = 55;
         /**
@@ -5209,7 +5210,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:homeAsUpIndicator
+          @attr name com.android.mysqlite:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 42;
         /**
@@ -5221,17 +5222,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:listChoiceBackgroundIndicator
+          @attr name com.android.mysqlite:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 74;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:listPopupWindowStyle
+          @attr name com.android.mysqlite:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 68;
         /**
@@ -5249,7 +5250,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:listPreferredItemHeight
+          @attr name com.android.mysqlite:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 62;
         /**
@@ -5267,7 +5268,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:listPreferredItemHeightLarge
+          @attr name com.android.mysqlite:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 64;
         /**
@@ -5285,7 +5286,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:listPreferredItemHeightSmall
+          @attr name com.android.mysqlite:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 63;
         /**
@@ -5303,7 +5304,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:listPreferredItemPaddingLeft
+          @attr name com.android.mysqlite:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 65;
         /**
@@ -5321,7 +5322,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:listPreferredItemPaddingRight
+          @attr name com.android.mysqlite:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 66;
         /**
@@ -5333,7 +5334,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:panelBackground
+          @attr name com.android.mysqlite:panelBackground
         */
         public static final int Theme_panelBackground = 71;
         /**
@@ -5345,7 +5346,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:panelMenuListTheme
+          @attr name com.android.mysqlite:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 73;
         /**
@@ -5363,7 +5364,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:panelMenuListWidth
+          @attr name com.android.mysqlite:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 72;
         /**
@@ -5375,7 +5376,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:popupMenuStyle
+          @attr name com.android.mysqlite:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 53;
         /**
@@ -5387,7 +5388,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:popupWindowStyle
+          @attr name com.android.mysqlite:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 54;
         /**
@@ -5399,7 +5400,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:searchViewStyle
+          @attr name com.android.mysqlite:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 61;
         /**
@@ -5413,7 +5414,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:selectableItemBackground
+          @attr name com.android.mysqlite:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 46;
         /**
@@ -5425,7 +5426,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:selectableItemBackgroundBorderless
+          @attr name com.android.mysqlite:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 47;
         /**
@@ -5437,7 +5438,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:spinnerDropDownItemStyle
+          @attr name com.android.mysqlite:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 41;
         /**
@@ -5449,7 +5450,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:spinnerStyle
+          @attr name com.android.mysqlite:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 40;
         /**
@@ -5461,7 +5462,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:switchStyle
+          @attr name com.android.mysqlite:switchStyle
         */
         public static final int Theme_switchStyle = 57;
         /**
@@ -5473,7 +5474,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textAppearanceLargePopupMenu
+          @attr name com.android.mysqlite:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 36;
         /**
@@ -5485,7 +5486,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textAppearanceListItem
+          @attr name com.android.mysqlite:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 69;
         /**
@@ -5497,7 +5498,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textAppearanceListItemSmall
+          @attr name com.android.mysqlite:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 70;
         /**
@@ -5509,7 +5510,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textAppearanceSearchResultSubtitle
+          @attr name com.android.mysqlite:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 59;
         /**
@@ -5521,7 +5522,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textAppearanceSearchResultTitle
+          @attr name com.android.mysqlite:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 58;
         /**
@@ -5533,7 +5534,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textAppearanceSmallPopupMenu
+          @attr name com.android.mysqlite:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 37;
         /**
@@ -5547,7 +5548,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:textColorSearchUrl
+          @attr name com.android.mysqlite:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 60;
         /**
@@ -5559,7 +5560,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:toolbarNavigationButtonStyle
+          @attr name com.android.mysqlite:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 52;
         /**
@@ -5571,7 +5572,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:toolbarStyle
+          @attr name com.android.mysqlite:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 51;
         /**
@@ -5588,7 +5589,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:windowActionBar
+          @attr name com.android.mysqlite:windowActionBar
         */
         public static final int Theme_windowActionBar = 1;
         /**
@@ -5606,7 +5607,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:windowActionBarOverlay
+          @attr name com.android.mysqlite:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 2;
         /**
@@ -5623,7 +5624,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:windowActionModeOverlay
+          @attr name com.android.mysqlite:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 3;
         /**
@@ -5646,7 +5647,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:windowFixedHeightMajor
+          @attr name com.android.mysqlite:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 7;
         /**
@@ -5669,7 +5670,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:windowFixedHeightMinor
+          @attr name com.android.mysqlite:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 5;
         /**
@@ -5692,7 +5693,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:windowFixedWidthMajor
+          @attr name com.android.mysqlite:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 4;
         /**
@@ -5715,7 +5716,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:windowFixedWidthMinor
+          @attr name com.android.mysqlite:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 6;
         /** Attributes that can be used with a Toolbar.
@@ -5726,29 +5727,29 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td> Allows us to read in the minHeight attr pre-v16 </td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.fragment1:collapseContentDescription}</code></td><td> Text to set as the content description for the collapse button.</td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.fragment1:collapseIcon}</code></td><td> Icon drawable to use for the collapse button.</td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.fragment1:contentInsetEnd}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.fragment1:contentInsetLeft}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.fragment1:contentInsetRight}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.fragment1:contentInsetStart}</code></td><td> Minimum inset for content views within a bar.</td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.fragment1:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.fragment1:navigationContentDescription}</code></td><td> Text to set as the content description for the navigation button
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.android.mysqlite:collapseContentDescription}</code></td><td> Text to set as the content description for the collapse button.</td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.android.mysqlite:collapseIcon}</code></td><td> Icon drawable to use for the collapse button.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.android.mysqlite:contentInsetEnd}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.android.mysqlite:contentInsetLeft}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.android.mysqlite:contentInsetRight}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.android.mysqlite:contentInsetStart}</code></td><td> Minimum inset for content views within a bar.</td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.android.mysqlite:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.android.mysqlite:navigationContentDescription}</code></td><td> Text to set as the content description for the navigation button
              located at the start of the toolbar.</td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.fragment1:navigationIcon}</code></td><td> Icon drawable to use for the navigation button located at
+           <tr><td><code>{@link #Toolbar_navigationIcon com.android.mysqlite:navigationIcon}</code></td><td> Icon drawable to use for the navigation button located at
              the start of the toolbar.</td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.fragment1:popupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
+           <tr><td><code>{@link #Toolbar_popupTheme com.android.mysqlite:popupTheme}</code></td><td> Reference to a theme that should be used to inflate popups
              shown by widgets in the toolbar.</td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.fragment1:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.fragment1:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_theme com.fragment1:theme}</code></td><td> Specifies a theme override for a view.</td></tr>
-           <tr><td><code>{@link #Toolbar_title com.fragment1:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.fragment1:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.fragment1:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.fragment1:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.fragment1:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.fragment1:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.fragment1:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.android.mysqlite:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.android.mysqlite:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_theme com.android.mysqlite:theme}</code></td><td> Specifies a theme override for a view.</td></tr>
+           <tr><td><code>{@link #Toolbar_title com.android.mysqlite:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.android.mysqlite:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.android.mysqlite:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.android.mysqlite:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.android.mysqlite:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.android.mysqlite:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.android.mysqlite:titleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -5809,7 +5810,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:collapseContentDescription
+          @attr name com.android.mysqlite:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
@@ -5821,7 +5822,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:collapseIcon
+          @attr name com.android.mysqlite:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
@@ -5840,7 +5841,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetEnd
+          @attr name com.android.mysqlite:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
@@ -5859,7 +5860,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetLeft
+          @attr name com.android.mysqlite:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
@@ -5878,7 +5879,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetRight
+          @attr name com.android.mysqlite:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
@@ -5897,11 +5898,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:contentInsetStart
+          @attr name com.android.mysqlite:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5913,7 +5914,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.fragment1:maxButtonHeight
+          @attr name com.android.mysqlite:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
@@ -5930,7 +5931,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:navigationContentDescription
+          @attr name com.android.mysqlite:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
@@ -5943,7 +5944,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:navigationIcon
+          @attr name com.android.mysqlite:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
@@ -5956,7 +5957,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:popupTheme
+          @attr name com.android.mysqlite:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
@@ -5972,17 +5973,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:subtitle
+          @attr name com.android.mysqlite:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:subtitleTextAppearance
+          @attr name com.android.mysqlite:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
@@ -5997,11 +5998,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name com.fragment1:theme
+          @attr name com.android.mysqlite:theme
         */
         public static final int Toolbar_theme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#title}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6011,11 +6012,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.fragment1:title
+          @attr name com.android.mysqlite:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6027,11 +6028,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.fragment1:titleMarginBottom
+          @attr name com.android.mysqlite:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 15;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6043,11 +6044,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.fragment1:titleMarginEnd
+          @attr name com.android.mysqlite:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6059,11 +6060,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.fragment1:titleMarginStart
+          @attr name com.android.mysqlite:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 12;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6075,11 +6076,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.fragment1:titleMarginTop
+          @attr name com.android.mysqlite:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 14;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -6091,17 +6092,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.fragment1:titleMargins
+          @attr name com.android.mysqlite:titleMargins
         */
         public static final int Toolbar_titleMargins = 11;
         /**
-          <p>This symbol is the offset where the {@link com.fragment1.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.android.mysqlite.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.fragment1:titleTextAppearance
+          @attr name com.android.mysqlite:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
@@ -6111,8 +6112,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td> Boolean that controls whether a view can take focus.</td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.fragment1:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
-           <tr><td><code>{@link #View_paddingStart com.fragment1:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.android.mysqlite:paddingEnd}</code></td><td> Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+           <tr><td><code>{@link #View_paddingStart com.android.mysqlite:paddingStart}</code></td><td> Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -6150,7 +6151,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:paddingEnd
+          @attr name com.android.mysqlite:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
@@ -6168,7 +6169,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name com.fragment1:paddingStart
+          @attr name com.android.mysqlite:paddingStart
         */
         public static final int View_paddingStart = 1;
         /** Attributes that can be used with a ViewStubCompat.
